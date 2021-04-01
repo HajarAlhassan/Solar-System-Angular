@@ -1,0 +1,21 @@
+<div class="flex-container">
+<div   *ngFor="let planet of planets" class="card"  (click)="onSelect(planet)">
+  <img src={{planet.img}} alt={{planet.name}} style="width:100%">
+  <div class="container">
+    <h4><b>{{planet.name}}</b></h4>
+    <p>Distance from Sun: {{planet.sunDistance}}</p> 
+    <p>Orbita Period: {{planet.orbitalPeriod}}</p> 
+    <p>Moons: {{planet.moonNum}}</p>
+  </div>
+</div>
+</div>
+ <div [className]="selected ? 'modal' : 'noshow'">
+  <span class="close" (click)="onClick()">&times;</span>
+  <img src={{selectedplanet.img}} alt={{selectedplanet.name}}  class="pop">
+  <div class="container">
+    <h2><b>{{selectedplanet.name}}</b></h2>
+    <p>{{selectedplanet.detail}}</p> 
+     <b><a href={{selectedplanet.link}} target="blank">Read more...</a></b>
+</div> 
+
+	
