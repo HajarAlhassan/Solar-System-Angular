@@ -22,3 +22,21 @@
   strong{
     text-shadow:5px 5px 5px yellow;
   }
+
+  @keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+  .animate-area {
+    width: 200px;
+    height: 200px;
+    background-image: url("https://i.pinimg.com/originals/b5/f8/bb/b5f8bb12f307e3f4fb037819f5842480.jpg");
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 10s linear infinite alternate;
+  }
+  
