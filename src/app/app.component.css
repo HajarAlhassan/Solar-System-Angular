@@ -5,6 +5,7 @@ h1 {
     font-size: 250%;
     text-align: center;
     margin-bottom: 30px;
+    
   }
   
   body, input[type="text"], button {
@@ -15,3 +16,50 @@ h1 {
   * {
     font-family: Arial, Helvetica, sans-serif;
   }
+  a {
+    background-image: url("https://images.newscientist.com/wp-content/uploads/2020/05/22112120/sagdig_opo0431b_web.jpg");
+    text-decoration: none;
+    font-size: 20px;
+  }
+  nav{
+  background-color:orange;
+    color:white;
+    padding: 20px;
+    margin-right:20px ;
+    height: 30px;
+  }
+  nav a {
+    padding: 0;
+    text-decoration: none;
+    padding: 30px;
+    margin-right: 20px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px white;
+  }
+  nav a:visited, a:link {
+    color:white
+  }
+  nav a:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+    height: 30px;
+    padding: 30px;
+    font-weight: bolder;
+  }
+  nav a.active {
+    color: #039be5;
+  }
+
+
+ 
+  .grad2 {
+    height: 30px;
+    background-color:orange; /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(55, 0, 255), yellow, rgb(156, 42, 122));
+  }
+  
+.grad {
+  text-shadow:8px 8px 5px red;
+}

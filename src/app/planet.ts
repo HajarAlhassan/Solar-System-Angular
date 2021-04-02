@@ -5,6 +5,6 @@ export interface Planet{
     detail?:string,
     link?:string,
     img:string
-    sunDistance:number,
-    orbitalPeriod:number
+    sunDistance:string,
+    orbitalPeriod:string
 }

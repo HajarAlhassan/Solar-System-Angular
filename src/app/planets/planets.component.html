@@ -2,10 +2,10 @@
 <div   *ngFor="let planet of planets" class="card"  (click)="onSelect(planet)">
   <img src={{planet.img}} alt={{planet.name}} style="width:100%">
   <div class="container">
-    <h4><b>{{planet.name}}</b></h4>
-    <p>Distance from Sun: {{planet.sunDistance}}</p> 
-    <p>Orbita Period: {{planet.orbitalPeriod}}</p> 
-    <p>Moons: {{planet.moonNum}}</p>
+    <h3><b>{{planet.name}}</b></h3>
+    <p><b>Distance from Sun:</b> {{planet.sunDistance}}</p> 
+    <p><b>Orbital Period:</b> {{planet.orbitalPeriod}}</p> 
+    <p><b>Moons:</b> {{planet.moonNum}}</p>
   </div>
 </div>
 </div>
